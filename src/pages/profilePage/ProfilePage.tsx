@@ -2,6 +2,7 @@ import { FC } from "react";
 import Button from "../../components/Button";
 
 const ProfilePage: FC = () => {
+  const trophies = Array(16).fill("/trophey.png");
   return (
     <>
       <div className="bg-[#FFDCA3]">
@@ -27,23 +28,15 @@ const ProfilePage: FC = () => {
         <div className="me-auto ms-auto max-w-28 mt-20">
           <Button className="">Edit profile</Button>
         </div>
-        <div className="mt-4 inline-flex flex-wrap gap-5 justify-center items-center mx-auto">
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
-          <img src="/trophey.png" alt="" className="w-32 h-32" />
+        <div className="mt-3 inline-flex flex-wrap gap-5 justify-center items-center mx-auto">
+          {trophies.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`trophy ${index}`}
+              className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32"
+            />
+          ))}
         </div>
       </div>
     </>
