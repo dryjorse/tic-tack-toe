@@ -1,9 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./null.css";
 
-@layer base {
-  * {
-    @apply m-0 p-0 box-border;
+body {
+  background-color: #fff3d9;
+  font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #2c5394;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 0 8px;
   }
 }

@@ -1,16 +1,12 @@
-import { Route, Routes } from "react-router-dom";
-import { routes } from "./constants/routes";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./constants/routes";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Routes>
-        {routes.map((route) => (
-          <Route key={route.path} {...route} />
-        ))}
-      </Routes>
-    </>
+    <RouterProvider
+      router={router}
+    />
   );
-}
+};
 
 export default App;
