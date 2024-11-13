@@ -20,7 +20,7 @@ const EditProfilePage: FC = () => {
             className="w-20 h-20 sm:h-24 sm:w-24 md:h-28 md:w-28 lg:w-36 lg:h-36 rounded-full border border-black filter grayscale brightness-75"
           />
           <img
-            src="/changeImage.svg"
+            src="/change-image.svg"
             alt="change image icon"
             className="md:h-11 md:w-11 lg:w-12 lg:h-12 absolute left-6 w-9 h-9 top-7 sm:top-8 sm:left-8 md:top-9 md:left-9 lg:top-12 lg:left-12"
           />
