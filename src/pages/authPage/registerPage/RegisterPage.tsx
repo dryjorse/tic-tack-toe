@@ -49,7 +49,7 @@ const RegisterPage: FC = () => {
                 type="password"
               />
 
-              <Button className="mt-3 px-6 sm:px-9">Login to account</Button>
+              <Button className="mt-3 px-6 sm:px-9">Register account</Button>
               <Link to={"/login"} className="text-sm text-center mt-3">
                 Already have an account?{" "}
                 <span className="underline text-[#66A0FF]">Log in here.</span>
