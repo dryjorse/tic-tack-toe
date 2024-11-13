@@ -27,12 +27,21 @@ const EditProfilePage: FC = () => {
         </section>
         <section>
           <form className="flex flex-col items-center gap-y-2 mt-4">
-            <label className="text-xl">Nickname</label>
-            <Input placeholder="Nickname" />
-            <label className="text-xl">Email</label>
-            <Input placeholder="email" type="email" />
-            <label className="text-xl">Password</label>
-            <Input placeholder="password" type="password" />
+            <label htmlFor="nickname" className="text-xl">
+              Nickname
+            </label>
+            <Input id="nickname" placeholder="Nickname" />
+
+            <label htmlFor="email" className="text-xl">
+              Email
+            </label>
+            <Input id="email" placeholder="email" type="email" />
+
+            <label htmlFor="password" className="text-xl">
+              Password
+            </label>
+            <Input id="password" placeholder="password" type="password" />
+
             <Button className="mt-3 px-6 sm:px-9">Save changes</Button>
           </form>
         </section>
