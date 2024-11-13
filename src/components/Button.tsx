@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 interface ButtonProps {
-  children: string;
+  children: React.ReactNode;
   className?: string;
 }
 

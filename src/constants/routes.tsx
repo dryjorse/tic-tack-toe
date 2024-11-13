@@ -6,6 +6,7 @@ import MenuPage from "../pages/menuPage/MenuPage";
 import ProfilePage from "../pages/profilePage/ProfilePage";
 import RulesPage from "../pages/rulesPage/RulesPage";
 import Layout from "./layout";
+import EditProfilePage from "../pages/editProfilePage/EditProfilePage";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
       { path: "/", element: <MenuPage /> },
       { path: "/game", element: <GamePage /> },
       { path: "/profile", element: <ProfilePage /> },
+      { path: "/editProfile", element: <EditProfilePage /> },
       { path: "/rules", element: <RulesPage /> },
       { path: "/register", element: <RegisterPage /> },
       { path: "/login", element: <LoginPage /> },

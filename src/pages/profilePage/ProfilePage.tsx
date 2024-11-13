@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 
 const ProfilePage: FC = () => {
   const trophies = Array(16).fill("/trophey.png");
@@ -18,15 +19,15 @@ const ProfilePage: FC = () => {
           </section>
 
           <img
-            src="/user.svg"
+            src="/user.webp"
             alt="user avatar"
-            className=" -mb-14 rounded-full bg-[#FFDCA3] w-24 sm:w-32 lg:w-44"
+            className=" -mb-14 rounded-full bg-[#FFDCA3] w-24 sm:w-32 lg:w-44 p-3"
           />
         </div>
       </div>
       <div className="container">
         <div className="me-auto ms-auto max-w-28 mt-20">
-          <Button className="">Edit profile</Button>
+          <Button className=""><Link to={"/editProfile"}>Edit profile</Link></Button>
         </div>
         <div className="mt-3 inline-flex flex-wrap gap-5 justify-center items-center mx-auto">
           {trophies.map((src, index) => (
