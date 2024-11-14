@@ -2,7 +2,7 @@ import { FC, useState } from "react";
 import Button from "../../components/Button";
 import Modal from "../../components/Modal";
 import Hub from "../../components/Hub";
-import { Input } from "../../components/Input";
+import Input from "../../components/Input";
 
 const MenuPage: FC = () => {
   const [isFirstModalOpen, setIsFirstModalOpen] = useState(false);
