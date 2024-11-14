@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
-import { Input } from "../../components/Input";
 import Button from "../../components/Button";
+import Input from "../../components/Input";
 
 const EditProfilePage: FC = () => {
   return (
