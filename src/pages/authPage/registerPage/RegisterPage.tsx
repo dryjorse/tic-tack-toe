@@ -13,21 +13,21 @@ const RegisterPage: FC = () => {
     >
       <div className="container h-[100vh] overflow-hidden -mt-[70px] flex">
         {/* Left side */}
-        <div className="flex justify-center items-center w-1/2 h-full">
+        <div className="flex justify-center items-center w-0 sm:w-1/2 h-full">
           <img
             src="/game-register.svg"
             alt="game login image"
             className="w-52 sm:w-60 md:w-80 lg:w-96"
           />
         </div>
-        {/* Left side */}
-        <div className="flex justify-center items-center w-1/2 h-full flex-col">
-          <h3 className="text-left max-w-52 sm:max-w-56  md:max-w-64 lg:max-w-72 w-full text-2xl ">
-          Registration
+        {/* Rigth side */}
+        <div className=" flex justify-center items-center w-full sm:w-1/2 h-full flex-col">
+          <h3 className="mx-auto sm:mx-0 text-center max-w-52 sm:max-w-56  md:max-w-64 lg:max-w-72  text-2xl ">
+            Registration
           </h3>
           <div>
-            <form className="flex flex-col items-left gap-y-2 mt-4">
-              <label htmlFor="nickname" className="text-xl">
+            <form className="flex flex-col items-center sm:items-start gap-y-2 mt-4 ">
+              <label htmlFor="nickname" className="text-xl ">
                 Nickname
               </label>
               <Input id="nickname" placeholder="nickname" type="text" />
@@ -49,7 +49,9 @@ const RegisterPage: FC = () => {
                 type="password"
               />
 
-              <Button className="mt-3 px-6 sm:px-9">Register account</Button>
+              <Button className="mt-3 px-6 sm:px-9 max-w-56 mx-auto">
+                Register account
+              </Button>
               <Link to={"/login"} className="text-sm text-center mt-3">
                 Already have an account?{" "}
                 <span className="underline text-[#66A0FF]">Log in here.</span>

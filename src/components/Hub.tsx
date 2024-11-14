@@ -20,7 +20,7 @@ const Hub: FC<HubProps> = ({ name, hubName, isPrivate, onPlay }) => {
         {isPrivate ? "Private" : "Public"}
       </p>
       <button
-        className="ps-1 py-1 text-blue-500 hover:underline w-9"
+        className="ps-1 py-1 text-blue-500 hover:underline w-9 me-2 pb-1"
         onClick={onPlay}
       >
         Play
